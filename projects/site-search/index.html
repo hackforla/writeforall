@@ -1,0 +1,71 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Site searcher</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<h1>Site searcher</h1>
+
+<form id="searcher">
+<br>Site hostname:
+<br><input id="site" type="text" value="www.example.com" size="60">
+<br>
+<br>Search words:
+<br><textarea id="words" rows="5" cols="60">hello world</textarea>
+<br><input type="file" id="input-file">
+
+<br>
+<br><button type="submit">Submit</button>
+</form>
+
+<script>
+
+function init() {
+  let params = new URLSearchParams(window.location.search);
+  document.getElementById("site").value = params.get("site") || "www.example.com"
+  document.getElementById("words").innerHTML = params.get("words") || "hello world";
+}
+
+function getFile(event) {
+	const input = event.target
+  if ('files' in input && input.files.length > 0) {
+	  placeFileContent(
+      document.getElementById('words'),
+      input.files[0])
+  }
+}
+
+function placeFileContent(target, file) {
+	readFileContent(file).then(content => {
+  	target.value = content
+  }).catch(error => console.log(error))
+}
+
+function readFileContent(file) {
+	const reader = new FileReader()
+  return new Promise((resolve, reject) => {
+    reader.onload = event => resolve(event.target.result)
+    reader.onerror = error => reject(error)
+    reader.readAsText(file)
+  })
+}
+
+window.addEventListener("load",function() {
+  init();
+  document.getElementById('input-file').addEventListener('change', getFile)
+  document.getElementById('searcher').addEventListener("submit",function(e) {
+    e.preventDefault(); // before the code
+    let site = document.getElementById("site").value.trim();
+    let words = document.getElementById("words").value.trim().replace(/\n/g, " ").replace(/,/g, " ").replace(/\t/g, " ").replace(/  +/g, " ").split(" ");
+    let terms = words.map(word => "intext:" + word);
+    let query = "site:" + site + " ( " + terms.join(" | ") + " )";
+    let uri = "https://www.google.com/search?q=" + encodeURIComponent(query);
+    window.open(uri);
+  });
+});
+
+</script>
+
+</body>
+</html>
