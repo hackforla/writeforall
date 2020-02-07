@@ -8,12 +8,13 @@
 <h1>Site searcher</h1>
 
 <form id="searcher">
-<br>Site hostname:
-<br><input id="site" type="text" value="www.example.com" size="60">
+<br>Site hostnames:
+<br><textarea id="sites" rows="5" cols="60">www.example.com</textarea>
+<br><input type="file" id="sites-input-file">
 <br>
 <br>Search words:
 <br><textarea id="words" rows="5" cols="60">hello world</textarea>
-<br><input type="file" id="input-file">
+<br><input type="file" id="words-input-file">
 
 <br>
 <br><button type="submit">Submit</button>
@@ -23,15 +24,18 @@
 
 function init() {
   let params = new URLSearchParams(window.location.search);
-  document.getElementById("site").value = params.get("site") || "www.example.com"
+  document.getElementById("sites").innerHTML = params.get("sites") || "www.example.com"
   document.getElementById("words").innerHTML = params.get("words") || "hello world";
 }
 
-function getFile(event) {
-	const input = event.target
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function uploadFileToElementId(input, elementId) {
   if ('files' in input && input.files.length > 0) {
 	  placeFileContent(
-      document.getElementById('words'),
+      document.getElementById(elementId),
       input.files[0])
   }
 }
@@ -53,7 +57,8 @@ function readFileContent(file) {
 
 window.addEventListener("load",function() {
   init();
-  document.getElementById('input-file').addEventListener('change', getFile)
+  document.getElementById('sites-input-file').addEventListener('change', function(event){ uploadFileToElementId(event.target, 'sites'); }, false);
+  document.getElementById('words-input-file').addEventListener('change', function(event){ uploadFileToElementId(event.target, 'words'); }, false);
   document.getElementById('searcher').addEventListener("submit",function(e) {
     e.preventDefault(); // before the code
     let site = document.getElementById("site").value.trim();
