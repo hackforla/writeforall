@@ -61,12 +61,14 @@ window.addEventListener("load",function() {
   document.getElementById('words-input-file').addEventListener('change', function(event){ uploadFileToElementId(event.target, 'words'); }, false);
   document.getElementById('searcher').addEventListener("submit",function(e) {
     e.preventDefault(); // before the code
-    let site = document.getElementById("site").value.trim();
+    let sites = document.getElementById("sites").value.trim().split(/[\n\r\t ,]+/)
     let words = document.getElementById("words").value.trim().replace(/\n/g, " ").replace(/,/g, " ").replace(/\t/g, " ").replace(/  +/g, " ").split(" ");
-    let terms = words.map(word => "intext:" + word);
-    let query = "site:" + site + " ( " + terms.join(" | ") + " )";
-    let uri = "https://www.google.com/search?q=" + encodeURIComponent(query);
-    window.open(uri);
+    let terms = " ( " + words.map(word => "intext:" + word).join(" | ") + " )"
+    for (site of sites) {
+      let query = "site:" + site + terms;
+      let uri = "https://www.google.com/search?q=" + encodeURIComponent(query);
+      window.open(uri);
+    }
   });
 });
 
