@@ -1,3 +1,5 @@
+<img src="assets/images/hero/equity-600x400.png">
+
 # Gender equity
 
 Gender equity is a priority for society and we want to improve gender inclusivity in our city and in our communications and our websites.
