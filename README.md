@@ -1,73 +1,39 @@
-# Project title and description
+# Gender equity
 
-Include a project description that explains **what** your project is and **why** it exists. Aim for no more than 3-5 concise sentences. For example, you might say:
+Gender equity is a priority for society and we want to improve gender inclusivity in our city and in our communications and our websites.
 
-{Project Name} is a project of Hack for LA. Hack for LA is a brigade of a Code for America that exists to {your mission}. {Project Name} helps {target users} accomplish {goal of project}. The {app/site/thing you're building}'s main features include {very brief feature descriptions}.
-
-### Project context
-
-Civic projects often exist within a larger context that may include multiple stakeholders, historic relationships, associated research, or other details that are relevant but not *required* for direct contributions. Gathering these details in one place is useful, but the ReadMe isn't that place. Use this section to [link to a Google Doc](#) or other documentation repository where contributors can dig in if they so choose. This is also a good place to link to your Code of Conduct.
-
-### Technology used
-
-- Each platform or framework should get its own bullet.
-- Each platform should include an [active link](#) to the official documentation.
+We are creating a web tool that searches websites for gender-exclusive words and suggests gender-inclusive words. For example, you can search for the gender-exclusive word "fireman", and the tool will find it, and suggest the gender-inclusive word "firefighter".
 
 
 
-# How to contribute
+## How to contribute
 
-Explain the different ways people can contribute. For example:
+We welcome help and constructive criticism. Here are some ways to parcipated.
 
-- Join the team {on Slack/at our weekly hack night/etc}.
-- To help with user research, {do ABC}.
-- To provide design support, {do XYZ}.
-- To contribute to the code, follow the instructions below.
+* Join the team at Hack For LA. We meet on Tuesday evenings downtown, and we keep in touch during the week via remote tools like Slack and Zoom.
 
-Remember to provide direct links to each channel.
+* Share your opinion about what words you want to search. We are currently experimenting with words on this [list](https://github.com/joelparkerhenderson/gender-inclusive-language), and we anticipate that many people may want to create their own lists of words.
 
 
+## Context
 
-## Installation instructions
+Here are gender inclusive language words I’ve used with other projects:
+<br>https://github.com/joelparkerhenderson/gender_inclusive_language
 
-1. Step-by-step instructions help new contributors get a development environment up and running quickly.
-2. You'll want to find the balance between being specific enough for novices to follow, without being so specific that you reinvent the wheel by providing overly-basic instructions that can be found elsewhere.
-3. Feel free to adapt this section and its sub-sections to your own processes.
-4. Alternatively, you can move everything from *Installation instructions* through *Testing* to a separate **Contributing.md** file to keep your **ReadMe.md** more succinct.
-
-
-### Working with issues
-
-- Explain how to submit a bug.
-- Explain how to submit a feature request.
-- Explain how to contribute to an existing issue.
-
-To create a new issue, please use the blank issue template (available when you click New Issue).  If you want to create an issue for other projects to use, please create the issue in your own repository and send a slack message to one of your hack night hosts with the link.
+Here’s a way to search one site for a bunch of words:
+<br>https://raw.githack.com/joelparkerhenderson/site_searcher/master/index.html
 
 
-### Working with forks and branches
+## Contact info
 
-- Explain your guidelines here.
+Email Joel Parker Henderson (joel@joelparkerhenderson.com).
 
-
-### Working with pull requests and reviews
-
-- Explain your process.
-
-
-### Testing
-
-- Provide instructions.
-
-
-
-# Contact info
-
-Include at least one way (or more, if possible) to reach your team with questions or comments.
+If you are a Hack For LA member, then our Slack channel is #gender-equity
 
 
 ### Licensing
 
-Include details about the project's open source status.
+For now, the project licensing is [GPL-2.0-only](https://spdx.org/licenses/GPL-2.0-only.html)
 
-*this readme file sourced from [Jessica Sand](http://jessicasand.com/other-stuff/just-enough-docs/)*
+If you have licensing needs, please contact us and let us know what you prefer.
+
