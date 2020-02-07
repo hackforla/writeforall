@@ -2,7 +2,10 @@
 
 # Gender equity
 
-Gender equity is a priority for society and we want to improve gender inclusivity in our city and in our communications and our websites.
+Gender equity is a priority in the City of Los Angeles and we want to improve the language used in websites to be more gender inclusive while also educating the public about gendered language.
+
+
+## Project
 
 We are creating a web tool that searches websites for gender-exclusive words and suggests gender-inclusive words. For example, you can search for the gender-exclusive word "fireman", and the tool will find it, and suggest the gender-inclusive word "firefighter".
 
