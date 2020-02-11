@@ -34,6 +34,36 @@ Developer experience (DX) skills to create devops.
 
   * Estimate 4-8 weeks.
 
+User interaction (UX) and user interface (UI) skills to create a web page.
+
+  * We need typical HTML and CSS,  or equivalent, with typical capabilties such as markup, styling, responsive layout, etc.
+
+  * This is a hands-on implementation role to get a web page live in production; this is not a Figma/Sketch/Marvel design exercise.
+
+Internationalization (I18) skills to help with Spanish and/or Mandarin and/or other languages.
+
+  * The project word list is currently only in English, and we don't know other languages.
+
+  * We want to find out if any similar kinds of issues exist in other languages, and if so, how we learn more about gender inclusive language.
+
+  * Estimate 2-4 weeks.
+
+Front-end developer.
+
+  * We want to build a web application implementing it using HTML, CSS, JavaScript, Svelte, Sapper.
+
+  * This role is a good match of people who have some experience with 2+ front-end frameworks, such as React, Vue, Angular, Ember, etc. This role is not a good match for people who only know 1 front-end framework.
+
+  * Estimate 16-32 weeks.
+
+Back-end developer.
+
+  * We want to build a web application implementing it using Elixir.
+
+  * This role is a good match of people who have some experience with 2+ backend languages and frameworks, such as JavaScript/Express, Ruby/Rails, Python/Django etc. This role is not a good match for people who only know 1 backend language and framework.
+
+  * Estimate 16-32 weeks.
+
 Business analyst (BA) skills to research practices for authentication/authorization.
 
   * We believe this area is likely applicable for many government agencies, so we want the outputs and outcomes to be available for other HFLA projects.
@@ -56,10 +86,3 @@ Mass communications (MC) skills to write landing page content, contributing page
 
   * Estimate 2-4 weeks.
 
-Internationalization (I18) skills to help with Spanish and/or Mandarin and/or other languages.
-
-  * The project word list is currently only in English, and we don't know other languages.
-
-  * We want to find out if any similar kinds of issues exist in other languages, and if so, how we learn more about gender inclusive language.
-
-  * Estimate 2-4 weeks.
