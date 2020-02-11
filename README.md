@@ -44,20 +44,34 @@ Gender equity is the process of being fair to all people, regardless of gender, 
 ## Resources
 
 
-### Introductions
+### Wikipedia
 
 [Gender equality - Wikipedia](https://wikipedia.org/wiki/Gender_equality)
 
 [Gender-neutral language - Wikipedia](https://en.wikipedia.org/wiki/Gender-neutral_language)
 
+[Non-binary gender - Wikipedia](https://en.wikipedia.org/wiki/Non-binary_gender)
+
+
+### United Nations
+
 [Gender equality - United Nations](https://www.un.org/sustainabledevelopment/gender-equality/)
+
+[Frequently asked questions about gender equality - United Nations](https://www.unfpa.org/resources/frequently-asked-questions-about-gender-equality)
 
 [Gender-inclusive language - United Nations](https://www.un.org/en/gender-inclusive-language/)
 
 
+### Gender
+
+[Understanding Gender - Gender Spectrum](https://www.genderspectrum.org/quick-links/understanding-gender/)
+
+[What Does It Mean to Be Non-Binary or Enby? - Verywell Mind](https://www.verywellmind.com/what-does-it-mean-to-be-non-binary-or-have-non-binary-gender-4172702)
+
+
 ### Gender equity and gender equality
 
-[Gender Equity Vs. Gender Equality: What’s the Distinction? (piplineequity.com)](https://www.pipelineequity.com/voices-for-equity/gender-equity-vs-gender-equality/)
+[Gender Equity Vs. Gender Equality: What’s the Distinction? - Pipline Equity)](https://www.pipelineequity.com/voices-for-equity/gender-equity-vs-gender-equality/)
 
 [Why We Need Gender Equity Now - Forbes](https://www.forbes.com/sites/ellevate/2017/09/14/why-we-need-gender-equity-now/)
 
