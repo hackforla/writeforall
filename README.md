@@ -11,9 +11,13 @@ Contents:
   * [How is gender different from sex?](#how-is-gender-different-from-sex)
   * [What is gender equity?](#what-is-gender-equity)
 * [Resources](#resources)
-  * [Introductions](#introductions)
+  * [Wikipedia](#wikipedia)
+  * [United Nations](#united-nations)
+  * [Gender](#gender)
   * [Gender equity and gender equality](#gender-equity-and-gender-equality)
   * [Gender-neutral language and gender-inclusive language](#gender-neutral-language-and-gender-inclusive-language)
+* [Gender-inclusive language list](#gender-inclusive-language-list)
+* [Pronoun grammar](#pronoun-grammar)
 * [Project](#project)
   * [How to contribute](#how-to-contribute)
   * [Context](#context)
@@ -87,9 +91,13 @@ Gender equity is the process of being fair to all people, regardless of gender, 
 [Gender-neutral language - European Parliament](https://www.europarl.europa.eu/cmsdata/151780/GNL_Guidelines_EN.pdf)
 
 
-## Gender-inclusive word list 
+## Gender-inclusive language list
 
-This list is a work in progress. We welcome constructive feedback.
+This list is organic, adaptable to local context, social context, priorities, cultural sensitivities, etc.
+
+We welcome constructive feedback.
+
+We welcome contributions in other languages.
 
 
 <h3>Pronouns</h3>
@@ -200,12 +208,3 @@ If you are a Hack For LA member, then our Slack channel is #gender-equity
 For now, the project licensing is [GPL-2.0-only](https://spdx.org/licenses/GPL-2.0-only.html)
 
 If you have licensing needs, please contact us and let us know what you prefer.
-# Gender inclusive language
-
-This is a list of gender inclusive language that we use with some of our projects.
-
-This list is organic, adaptable to local context, social context, priorities, cultural sensitivities, etc.
-
-We welcome constructive feedback.
-
-We welcome contributions in other languages.
