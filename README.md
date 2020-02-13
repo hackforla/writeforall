@@ -1,4 +1,4 @@
-<img src="assets/images/hero/equity-600x400.png">
+<img src="assets/images/hero/hfla-site-hero-600x400.png">
 
 # Gender equity
 
