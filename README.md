@@ -38,7 +38,7 @@ Gender differs from sex in that gender is social and cultural in nature, and sex
 
 ### What is gender equity?
 
-Gender equity is the process of being fair to all people, regardless of gender, such as male, female, transgender, agender, etc. Gender equity is linked to sustainable development and is vital to the realization of human rights for all. The overall objective of gender equity is a society in which all people enjoy the same opportunities, rights, and obligations, in all spheres of life, regardless of gender. 
+Gender equity is the process of being fair to all people, regardless of gender, such as male, female, transgender, agender, etc. Gender equity is linked to sustainable development and is vital to the realization of human rights for all. The overall objective of gender equity is a society in which all people enjoy the same opportunities, rights, and obligations, in all spheres of life, regardless of gender.
 
 
 ## Resources
@@ -85,6 +85,25 @@ Gender equity is the process of being fair to all people, regardless of gender, 
 [Gender Neutral Pronouns & Inclusive Language - Harvard.edu](https://www.extension.harvard.edu/professional-development/blog/inclusive-language-four-easy-steps)
 
 [Gender-neutral language - European Parliament](https://www.europarl.europa.eu/cmsdata/151780/GNL_Guidelines_EN.pdf)
+
+
+## Pronouns
+
+Pronouns are words that identify someone.
+
+* Subject pronoun. Example: “she” as in “she likes Alice”. ([Wikipedia](https://wikipedia.org/wiki/Subject_pronoun))
+
+* Object pronoun. Example: “her” as in “Alice likes her”. ([Wikipedia](https://wikipedia.org/wiki/Object_pronoun))
+
+* Dependent possessive pronoun. Example: “her” as in “her ideas are good”. ([Wikipedia](https://wikipedia.org/wiki/Possessive_pronoun))
+
+* Independent possessive pronoun. Example: “hers” as in “the ideas are hers”. ([Wikipedia](https://wikipedia.org/wiki/Possessive_determiner))
+
+* Reflexive pronoun. Example: “herself” as in “she likes herself”. ([Wikipedia](https://wikipedia.org/wiki/Reflexive_pronoun))
+
+* Intensive pronoun. Example: “herself” as in “she does it herself”. ([Wikipedia](https://wikipedia.org/wiki/Intensive_pronoun))
+
+* Disjunctive pronoun. Example: “her” as in “it is her”. ([Wikipedia](https://wikipedia.org/wiki/Disjunctive_pronoun))
 
 
 ## Project
