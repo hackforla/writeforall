@@ -13,6 +13,7 @@
   "license": "GPL-2.0",
   "description": "A headless webscraper",
   "dependencies": {
+    "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",
     "path": "^0.12.7",
     "puppeteer": "^2.1.1",
