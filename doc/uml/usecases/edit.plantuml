@@ -1,0 +1,23 @@
+@startuml
+' Edit: update site content to phase in gender inclusive language
+skinparam monochrome true
+skinparam linetype polyline
+skinparam linetype ortho
+left to right direction
+
+actor Editor as editor
+
+usecase (Triage findings) as triage_findings
+note bottom of triage_findings : Look at the audit search results\nand decide how to make changes.
+
+usecase (Update content) as update_content
+note bottom of update_content : Involve suitable content managers\nwho edit, proofread, and publish.
+
+usecase (Track progress) as track_progress
+note bottom of track_progress : Report all ongoing metrics\nfor objectives and key results.
+
+editor --> triage_findings
+triage_findings --> update_content
+update_content --> track_progress
+
+@enduml

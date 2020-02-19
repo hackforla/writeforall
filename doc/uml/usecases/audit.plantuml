@@ -1,0 +1,23 @@
+@startuml
+' Audit: search sites and words to find gender exclusive language
+skinparam monochrome true
+skinparam linetype polyline
+skinparam linetype ortho
+left to right direction
+
+actor Auditor as auditor
+
+usecase (Configure terms) as configure_terms
+note bottom of configure_terms : Type in sites and words\nand/or upload text files
+
+usecase (Search sites) as search_sites
+note bottom of search_sites : Invoke automatic processing\nsuch as Lambda and JavaScript
+
+usecase (View results) as view_results
+note bottom of view_results : Show matching sites and words\nideally suitable for triage
+
+auditor --> configure_terms
+configure_terms --> search_sites
+search_sites --> view_results
+
+@enduml

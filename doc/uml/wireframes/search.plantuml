@@ -1,0 +1,21 @@
+@startsalt
+{+
+{* Search | Help | About }
+{
+  Search page
+  ..
+  ..
+  Sites to search:
+  "https://example.com"
+  [Upload text file]
+  ..
+  ..
+  Words to search:
+  "businessman chairman"
+  [Upload text file]
+  ..
+  ..
+  [Search]
+}
+}
+@endsalt
