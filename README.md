@@ -1,8 +1,8 @@
 <img src="assets/images/hero/hfla-site-hero-600x400.png">
 
-# Gender equity
+# Equity Language
 
-Gender equity is a priority in the City of Los Angeles and we want to improve the language used in websites to be more gender inclusive while also educating the public about gendered language.
+Equity is a priority in the City of Los Angeles and we want to improve the language used in websites to be more gender inclusive while also educating the public about gendered language.
 
 Contents:
 
@@ -200,7 +200,7 @@ Here’s a way to search one site for a bunch of words:
 
 Email Joel Parker Henderson (joel@joelparkerhenderson.com).
 
-If you are a Hack For LA member, then our Slack channel is #gender-equity
+If you are a Hack For LA member, then our Slack channel is #equity-language
 
 
 ### Licensing
