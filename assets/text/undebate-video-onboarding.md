@@ -5,7 +5,7 @@
 * [Video recorder with instructions](https://undebate-cc.herokuapp.com/hackforla-projects-recorder)
 * [Where you can listen to it when you are done](https://undebate-cc.herokuapp.com/hackforla-projects)
 
-## Draft of our Project Video Script
+## Project Video Script (WIP - Feel free to modify)
 
 Hi, my name is [NAME], and I'm a [ROLE] on equity language.
 
