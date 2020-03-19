@@ -4,6 +4,7 @@
 
 Equity is a priority in the City of Los Angeles and we want to improve the language used in websites to be more inclusive (of all communities) while also educating the public about exclusionary language.
 
+[Preview of our web search tool](https://htmlpreview.github.io/?https://github.com/joelparkerhenderson/site_searcher/blob/master/index.html)
 
 Contents:
 
