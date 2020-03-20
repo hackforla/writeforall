@@ -4,7 +4,7 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "description": "Lightweight Node.js API with Docker support, test coverage and circle.ci support.",
+  "description": "A headless webscraper",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -30,7 +30,6 @@
   ],
   "author": "hackforla",
   "license": "GPL-2.0",
-  "description": "A headless webscraper",
   "dependencies": {
     "async": "^2.5.0",
     "bcryptjs": "^2.4.3",
