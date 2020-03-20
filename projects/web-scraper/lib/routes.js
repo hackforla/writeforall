@@ -15,7 +15,7 @@ module.exports = function (app) {
   const UserController = require('./user/UserController')(app);
   router.use('/users', UserController);
 
-  const SpiderController = require('./user/spiderController')(app);
+  const SpiderController = require('./spider/spiderController')(app);
   router.use('/spider', SpiderController);
 
 
