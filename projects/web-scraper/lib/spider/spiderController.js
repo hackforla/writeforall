@@ -9,7 +9,7 @@ module.exports = function (app) {
 
 
   // CREATES A NEW NOTE
-  SpiderController.post('/', VerifyToken, validateSpider, SpiderProvider.createNote);
+  SpiderController.post('/', VerifyToken, validateSpider, SpiderProvider.createSpider);
 
   // RETURNS ALL THE NOTES IN THE DATABASE
   SpiderController.get('/', SpiderProvider.getNotes);
