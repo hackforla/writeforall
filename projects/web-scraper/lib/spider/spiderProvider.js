@@ -168,7 +168,7 @@ function putSpider(req, res, next) {
   // examples xmlInjest('www-lamayor', '/siteMap.xml');
   xmlInjest('www-lamayor', '/siteMap.xml').then((data) => {
     res.send({
-      'worker': data || ' ??????',
+      'worker': data || '??????',
       'input': {
         'params': req.params,
         'body': req.body
