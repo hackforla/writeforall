@@ -1,2 +1,17 @@
 ./output/**
 ./node_modules/**
+node_modules
+coverage
+.nyc_output
+mongo
+.vscode
+logs
+variables.env
+prod.variables.env
+.env
+test.variables.env
+
+# semaphore secrets
+.semaphore/docker.secrets.yml
+.semaphore/kops.secrets.yml
+.semaphore/ssh.secrets.yml
