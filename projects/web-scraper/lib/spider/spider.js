@@ -4,6 +4,6 @@ var SpiderSchema = new mongoose.Schema({
   description: String,
   pinned: { type: Boolean, default: false }
 });
-mongoose.model('Spider', NoteSchema);
+mongoose.model('Spider', SpiderSchema);
 
 module.exports = mongoose.model('Spider');
