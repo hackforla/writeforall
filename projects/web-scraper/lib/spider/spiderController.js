@@ -3,7 +3,7 @@ module.exports = function (app) {
 
   var express = require('express');
   var SpiderController = express.Router();
-  var SpiderProvider = require('./SpiderProvider');
+  var SpiderProvider = require('./spiderProvider');
   var validateSpider = require('./validateSpider');
   var VerifyToken = require(__root + 'auth/VerifyToken')(app);
 
