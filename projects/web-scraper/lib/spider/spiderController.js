@@ -44,7 +44,7 @@ module.exports = function (app) {
 
         let filePath = path.resolve(`./output/` + siteName + '/' + `${url.pathname}`);
         if (path.extname(url.pathname).trim() === '') {
-           console.log(url.pathname, `${filePath}/index.html`)
+          console.log(url.pathname, `${filePath}/index.html`)
           filePath = `${filePath}/index.html`;
         }
 

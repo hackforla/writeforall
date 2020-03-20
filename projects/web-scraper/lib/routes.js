@@ -15,6 +15,10 @@ module.exports = function (app) {
   const UserController = require('./user/UserController')(app);
   router.use('/users', UserController);
 
+  const SpiderController = require('./user/SpiderController')(app);
+  router.use('/spider', SpiderController);
+
+
   /**
    * default error handling
    */
