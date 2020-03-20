@@ -21,7 +21,7 @@ module.exports = function (app) {
   SpiderController.delete('/:id', VerifyToken, SpiderProvider.deleteSpider);
 
   // UPDATES A SINGLE NOTE IN THE DATABASE
-  SpiderController.put('/:id', VerifyToken, SpiderProvider.putSpider);
+  SpiderController.put('/:id', SpiderProvider.putSpider);
 
   return SpiderController;
 

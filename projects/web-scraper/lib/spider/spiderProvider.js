@@ -108,10 +108,10 @@ let xmlInjest = (siteName, path) => {
       result.urlset.url.forEach((item, index) => {
         items.push(async () => {
           //console.log(item.loc[0]);
-          start(item.loc[0]);
+          start(item.loc[0], siteName);
         });
       });
-      console.log(JSON.stringify(items[0]));
+      //console.log(JSON.stringify(items[0]));
       // Read X items, Y at a time.
       createQueue(items.slice(0,2), 1);
     });
@@ -159,12 +159,17 @@ function putSpider(req, res, next) {
   //   .catch(err => next(new Error(err)));
 
   //start('https://www.lamayor.org/', 'www');
-  return {
-    'worker': xmlInjest('www-lamayor', '/siteMap.xml'),
-    'input': {
-      'params': req.params,
-      'body': req.body
-    }
-  };
+  let stuff = xmlInjest('www-lamayor', '/siteMap.xml').then((data) => {
+    console.log(data, 'fin ?');
+
+    return {
+      'worker': data,
+      'input': {
+        'params': req.params,
+        'body': req.body
+      }
+    };
+  })
+
 }
 
