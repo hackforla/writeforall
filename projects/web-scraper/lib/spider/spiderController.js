@@ -12,16 +12,16 @@ module.exports = function (app) {
   SpiderController.post('/', VerifyToken, validateSpider, SpiderProvider.createSpider);
 
   // RETURNS ALL THE NOTES IN THE DATABASE
-  SpiderController.get('/', SpiderProvider.getNotes);
+  SpiderController.get('/', SpiderProvider.getSpiders);
 
   // GETS A SINGLE NOTE FROM THE DATABASE
-  SpiderController.get('/:id', SpiderProvider.getNote);
+  SpiderController.get('/:id', SpiderProvider.getSpiders);
 
   // DELETES A NOTE FROM THE DATABASE
-  SpiderController.delete('/:id', VerifyToken, SpiderProvider.deleteNote);
+  SpiderController.delete('/:id', VerifyToken, SpiderProvider.deleteSpider);
 
   // UPDATES A SINGLE NOTE IN THE DATABASE
-  SpiderController.put('/:id', VerifyToken, SpiderProvider.putNote);
+  SpiderController.put('/:id', VerifyToken, SpiderProvider.putSpider);
 
   return SpiderController;
 
