@@ -1,7 +1,7 @@
 function init() {
   let params = new URLSearchParams(window.location.search);
   document.getElementById("sites").innerHTML = params.get("sites") || "www.example.com"
-  document.getElementById("words").innerHTML = params.get("words") || "hello world";
+  document.getElementById("words").innerHTML = params.get("words") || "actress\nairman\nanchorman\nbellboy\nbusinessman\ncaveman\nchairman\nclergyman\ncouncilman\ncommitteeman\ncongressman\ncraftsman\ndoorman\neveryman\nfireman\nfreshman\ngentleman\nlayman\nlineman\nmailman\nmankind\nman-made\nmanhole\nmanpower\nmiddleman\nnewsman\nombudsman\npoliceman\npostman\nspokesman\nstatesman\nstewardess\n";
 }
 
 function sleep(ms) {
