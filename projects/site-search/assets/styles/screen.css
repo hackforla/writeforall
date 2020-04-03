@@ -2,3 +2,14 @@ body {
     font-family: sans-serif;
     padding: 1em;
 }
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline; 
+    list-style-type: none;
+    padding-right: 1em;
+}
