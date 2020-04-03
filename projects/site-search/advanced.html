@@ -1,34 +1,35 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Equity language site search</title>
+  <title>Equity language site search - Advanced search</title>
   <link rel="stylesheet" type="text/css" href="assets/styles/screen.css">
 </head>
 <body>
 
 <img src="assets/images/logo.png">
 
-<h1>Equity language site search</h1>
+<h1>Advanced search</h1>
 
 <p>Equity Language site search is a web tool that strives to identify and eliminate unecessarily gendered language. It helps you quickly scan web sites to find pages using the gendered terms and pronouns you're looking for. This helps you identify web pages and text that you want to improve.</p>
-
-<ul>
-<li><a href="why.html">Why this matters</a></li>
-<li><a href="faq.html">Frequently asked questions</a></li>
-<li><a href="advanced.html">Advanced search</a></li>
-</ul>
 
 <form id="searcher">
 
   <div>
-    <label for="sites">What sites do you want to search?</label>
+    <label for="sites">Search these sites -- you can type one site per line.</label>
     <br><textarea id="sites" rows="4" cols="60">www.example.com</textarea>
   </div>
 
   <br>
 
   <div>
-    <label for="words">What words to you want to find?</label>
+    <label for="sites-input-file">Or you can upload a text file with one site per line.</label>
+    <br><input type="file" id="sites-input-file">  
+  </div>
+
+  <br>
+
+  <div>
+    <label for="words">Search these words -- you can type one word per line.</label>
     <br><textarea id="words" rows="4" cols="60">
 actress
 airman
@@ -62,7 +63,15 @@ postman
 spokesman
 statesman
 stewardess
+hello world
 </textarea>
+  </div>
+
+  <br>
+
+  <div>
+    <label for="words-input-file">Or you can upload a text file with one word per line.</label>
+    <br><input type="file" id="words-input-file">
   </div>
 
   <br>
