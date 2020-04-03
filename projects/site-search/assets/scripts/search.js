@@ -1,7 +1,75 @@
+function defaultSites() {
+  return [
+    "apnews.com",
+    "news.yahoo.com",
+    "news.google.com",
+    "cnn.com",
+    "usatoday.com"
+  ].join("\n")
+}
+
+function defaultWords() {
+  return [
+    "anchorman",
+    "businessman",
+    "cameraman",
+    "chairman",
+    "clergyman",
+    "councilman",
+    "committeeman",
+    "congressman",
+    "craftsman",
+    "doorman",
+    "everyman",
+    "fireman",
+    "fisherman",
+    "freshman",
+    "gentleman",
+    "layman",
+    "lineman",
+    "mailman",
+    "mankind",
+    "manmade",
+    "manhole",
+    "manpower",
+    "middleman",
+    "newsman",
+    "ombudsman",
+    "policeman",
+    "postman",
+    "spokesman",
+    "statesman",
+    ].join("\n")
+}
+
 function init() {
-  let params = new URLSearchParams(window.location.search);
-  document.getElementById("sites").innerHTML = params.get("sites") || "www.example.com"
-  document.getElementById("words").innerHTML = params.get("words") || "actress\nairman\nanchorman\nbellboy\nbusinessman\ncaveman\nchairman\nclergyman\ncouncilman\ncommitteeman\ncongressman\ncraftsman\ndoorman\neveryman\nfireman\nfreshman\ngentleman\nlayman\nlineman\nmailman\nmankind\nman-made\nmanhole\nmanpower\nmiddleman\nnewsman\nombudsman\npoliceman\npostman\nspokesman\nstatesman\nstewardess\n";
+  let params = new URLSearchParams(window.location.search)
+  initSitesTextArea(params)
+  initWordsTextArea(params)
+  initSitesInputFile()
+  initWordsInputFile()
+}
+
+function initSitesTextArea(params) {
+  document.getElementById("sites").innerHTML = params.get("sites") || defaultSites()
+}
+
+function initWordsTextArea(params) {
+  document.getElementById("words").innerHTML = params.get("words") || defaultWords()
+}
+
+function initSitesInputFile() {
+  let sitesInputFileElement = document.getElementById('sites-input-file')
+  if (sitesInputFileElement) {
+    sitesInputFileElement.addEventListener('change', function(event){ uploadFileToElementId(event.target, 'sites'); }, false);
+  }
+}
+
+function initWordsInputFile() {
+  let wordsInputFileElement = document.getElementById('words-input-file')
+  if (wordsInputFileElement) {
+    wordsInputFileElement.addEventListener('change', function(event){ uploadFileToElementId(event.target, 'words'); }, false);
+  }
 }
 
 function sleep(ms) {
@@ -32,9 +100,9 @@ function readFileContent(file) {
 }
 
 window.addEventListener("load",function() {
-  init();
-  document.getElementById('sites-input-file').addEventListener('change', function(event){ uploadFileToElementId(event.target, 'sites'); }, false);
-  document.getElementById('words-input-file').addEventListener('change', function(event){ uploadFileToElementId(event.target, 'words'); }, false);
+  init()
+  initSitesInputFile()
+  initWordsInputFile()
   document.getElementById('searcher').addEventListener("submit",function(e) {
     e.preventDefault(); // before the code
     let sites = document.getElementById("sites").value.trim().split(/[\n\r\t ,]+/)
