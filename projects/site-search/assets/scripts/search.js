@@ -4,7 +4,9 @@ function defaultSites() {
     "news.yahoo.com",
     "news.google.com",
     "cnn.com",
-    "usatoday.com"
+    "usatoday.com",
+    "foxnews.com",
+    "www.prnewswire.com",
   ].join("\n")
 }
 
@@ -40,6 +42,22 @@ function defaultWords() {
     "spokesman",
     "statesman",
     ].join("\n")
+}
+
+function getSites() {
+  return document.getElementById("sites").value.trim().split(/[\n\r\t ,]+/)
+}
+
+function getWords() {
+  return document.getElementById("words").value.trim().replace(/\n/g, " ").replace(/,/g, " ").replace(/\t/g, " ").replace(/  +/g, " ").split(" ");
+}
+
+function sitesToSearchTerms(sites) {
+  return "( " + sites.map(site => "site:" + site).join(" | ") + " )" 
+}
+
+function wordsToSearchTerms(words) {
+  return "( " + words.map(word => "intext:" + word).join(" | ") + " )"
 }
 
 function init() {
@@ -105,13 +123,9 @@ window.addEventListener("load",function() {
   initWordsInputFile()
   document.getElementById('searcher').addEventListener("submit",function(e) {
     e.preventDefault(); // before the code
-    let sites = document.getElementById("sites").value.trim().split(/[\n\r\t ,]+/)
-    let words = document.getElementById("words").value.trim().replace(/\n/g, " ").replace(/,/g, " ").replace(/\t/g, " ").replace(/  +/g, " ").split(" ");
-    let terms = " ( " + words.map(word => "intext:" + word).join(" | ") + " )"
-    for (site of sites) {
-      let query = "site:" + site + terms;
-      let uri = "https://www.google.com/search?q=" + encodeURIComponent(query);
-      window.open(uri);
-    }
+    let sites = getSites()
+    let words = getWords()
+    let query = sitesToSearchTerms(sites) + " " + wordsToSearchTerms(words)
+    window.location = "https://www.google.com/search?q=" + encodeURIComponent(query);
   });
 });
