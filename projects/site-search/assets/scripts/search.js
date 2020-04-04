@@ -10,7 +10,7 @@ function defaultSites() {
   ].join("\n")
 }
 
-function defaultWords() {
+function defaultTerms() {
   return [
     "anchorman",
     "businessman",
@@ -44,36 +44,44 @@ function defaultWords() {
     ].join("\n")
 }
 
-function getSites() {
-  return document.getElementById("sites").value.trim().split(/[\n\r\t ,]+/)
+function getSitesAsText() {
+  return document.getElementById("sites").value
 }
 
-function getWords() {
-  return document.getElementById("words").value.trim().replace(/\n/g, " ").replace(/,/g, " ").replace(/\t/g, " ").replace(/  +/g, " ").split(" ");
+function getTermsAsText() {
+  return document.getElementById("terms").value
 }
 
-function sitesToSearchTerms(sites) {
+function parseSitesAsText(sitesAsText) {
+  return sitesAsText.trim().split(/[\n\r\t ,]+/)
+}
+
+function parseTermsAsText(termsAsText) {
+  return termsAsText.trim().replace(/,/g, " ").replace(/\t/g, " ").replace(/  +/g, " ").split(/ *\n */)
+}
+
+function formatSitesAsSearch(sites) {
   return "( " + sites.map(site => "site:" + site).join(" | ") + " )" 
 }
 
-function wordsToSearchTerms(words) {
-  return "( " + words.map(word => "intext:" + word).join(" | ") + " )"
+function formatTermsAsSearch(terms) {
+  return "( " + terms.map(word => "intext:" + word).join(" | ") + " )"
 }
 
 function init() {
   let params = new URLSearchParams(window.location.search)
   initSitesTextArea(params)
-  initWordsTextArea(params)
+  initTermsTextArea(params)
   initSitesInputFile()
-  initWordsInputFile()
+  initTermsInputFile()
 }
 
 function initSitesTextArea(params) {
   document.getElementById("sites").innerHTML = params.get("sites") || defaultSites()
 }
 
-function initWordsTextArea(params) {
-  document.getElementById("words").innerHTML = params.get("words") || defaultWords()
+function initTermsTextArea(params) {
+  document.getElementById("terms").innerHTML = params.get("terms") || defaultTerms()
 }
 
 function initSitesInputFile() {
@@ -83,10 +91,10 @@ function initSitesInputFile() {
   }
 }
 
-function initWordsInputFile() {
-  let wordsInputFileElement = document.getElementById('words-input-file')
-  if (wordsInputFileElement) {
-    wordsInputFileElement.addEventListener('change', function(event){ uploadFileToElementId(event.target, 'words'); }, false);
+function initTermsInputFile() {
+  let termsInputFileElement = document.getElementById('terms-input-file')
+  if (termsInputFileElement) {
+    termsInputFileElement.addEventListener('change', function(event){ uploadFileToElementId(event.target, 'terms'); }, false);
   }
 }
 
@@ -120,12 +128,12 @@ function readFileContent(file) {
 window.addEventListener("load",function() {
   init()
   initSitesInputFile()
-  initWordsInputFile()
+  initTermsInputFile()
   document.getElementById('searcher').addEventListener("submit",function(e) {
     e.preventDefault(); // before the code
-    let sites = getSites()
-    let words = getWords()
-    let query = sitesToSearchTerms(sites) + " " + wordsToSearchTerms(words)
+    let sites = parseSitesAsText(getSitesAsText())
+    let terms = parseTermsAsText(getTermsAsText())
+    let query = formatSitesAsSearch(sites) + " " + formatTermsAsSearch(terms)
     window.location = "https://www.google.com/search?q=" + encodeURIComponent(query);
   });
 });
