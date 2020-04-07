@@ -223,3 +223,7 @@ Pronouns are words that identify someone. Pronoun grammar is how we talk about p
 
 * [Ablism and Language](http://blogs.oregonstate.edu/dasblog/2012/01/31/ableism-and-language/)
 * [Avoiding Ablist Language](https://web.augsburg.edu/english/writinglab/Avoiding_Ableist_Language.pdf)
+
+## On Avoiding Sexist Language
+
+* [10 Adjectives to stop using to describe women](https://www.inhersight.com/blog/insight-commentary/sexist-adjectives-used-to-describe-women)
