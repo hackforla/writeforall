@@ -1,6 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     padding: 1em;
+    line-height: 1.5em;
+}
+
+img {
+  width: 100px;
+}
+
+h1 {
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 1.25em;
+}
+h2 {
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+
+.content-wrap {
+  max-width: 650px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+a {
+    color: #FF5678;
+    font-size: 1.25em;
+}
+
+.btn {
+  color: #FFFFFF;
+  font-size: 1.25em;
+  background: #FF5678;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+textarea {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
 }
 
 nav ul {
