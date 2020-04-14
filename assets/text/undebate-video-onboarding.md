@@ -24,8 +24,6 @@ We would flag...
 
 Following each suggestion, we'd have some education so that users would be able to make the right editing decisions.
 
-We're a relatively fresh project, so new volunteers have a great opportunity to jump into the beginning of a project and see it through to the end. 
-
 We are currently looking for:
 * UX developer
 * JavaScript programmer
