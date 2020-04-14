@@ -6,7 +6,9 @@ We want to improve the language used in websites to be more inclusive (of all co
 
 Our goal is to help make content on the web more inclusive towards all genders, LGBTQ+ people, and more. 
 
-[Preview of our web search tool](https://htmlpreview.github.io/?https://github.com/joelparkerhenderson/site_searcher/blob/master/index.html)
+[Preview of our web search tool](http://www.nonprofitnetworks.org/equity-language/)
+
+Wanna help out? Check out our [Desired Skills](https://github.com/hackforla/equity-language/blob/master/assets/text/desired-skills.md)
 
 Contents:
 
