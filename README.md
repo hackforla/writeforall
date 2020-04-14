@@ -1,8 +1,8 @@
 <img src="assets/images/hero/hfla-site-hero-600x400.png">
 
-# Equity Language
+# Write for Everyone
 
-Equity is a priority in the City of Los Angeles and we want to improve the language used in websites to be more inclusive (of all communities) while also educating the public about exclusionary language.
+We want to improve the language used in websites to be more inclusive (of all communities) while also educating the public about exclusionary language.
 
 Our goal is to help make content on the web more inclusive towards all genders, LGBTQ+ people, and more. 
 
