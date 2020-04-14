@@ -8,7 +8,8 @@ Our goal is to help make content on the web more inclusive towards all genders, 
 
 [Preview of our web search tool](http://www.nonprofitnetworks.org/equity-language/)
 
-Wanna help out? Check out our [Desired Skills](https://github.com/hackforla/equity-language/blob/master/assets/text/desired-skills.md)
+Wanna help out? Check out our [Desired Skills](https://github.com/hackforla/equity-language/blob/master/assets/text/desired-skills.md) and contact us on slack. 
+
 
 Contents:
 
