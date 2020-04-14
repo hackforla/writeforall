@@ -7,13 +7,13 @@
 
 ## Project Video Script (WIP - Feel free to modify)
 
-Hi, my name is [NAME], and I'm a [ROLE] on equity language.
+Hi, my name is [NAME], and I'm a [ROLE] on Write for Everyone.
 
-Equity language is working to create a tool that can scrape website text, flag instances of non-inclusive language, and provide education in order to create a more inclusive web. 
+Write for Everyone is working to create a tool that can search website text, flag instances of non-inclusive language, and provide education in order to create a more inclusive web. 
 
 Our goal is to help make content on the web more inclusive towards all genders, LGBTQ+ people, and more. 
 
-Think about equity language as making a Grammarly for inclusive language. 
+Think about Write for Everyone as making a Grammarly for inclusive language. 
 
 Here are 3 examples:
 
@@ -35,7 +35,7 @@ We are currently looking for:
 * Communications writer AND
 * Videographer
 
-Feel free poke around in our GitHub or slack our channel if you have any questions. 
+Feel free poke around in our GitHub or slack our channel if you have any questions. Go through our readme for more about the roles we're recruiting for. 
 
-Join the equity language project and help move the needle towards a more inclusive web.
+Join Write for Everyone and help move the needle towards a more inclusive web.
 
