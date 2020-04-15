@@ -1,1 +1,1 @@
-rsync -av --delete /opt/hackforla/equity-language/projects/site-search/ /usr/share/nginx/html/equity-language/
+rsync -av --delete /opt/hackforla/writeforeveryone/projects/site-search/ /usr/share/nginx/html/writeforeveryone/

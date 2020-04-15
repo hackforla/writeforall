@@ -1,4 +1,4 @@
-# Change project name: gender-equity → to equity-language 
+# Change project name: gender-equity → to writeforeveryone 
 
 ## Status
 
@@ -11,7 +11,7 @@ We also thought about changing our name to just "equity" but it is just too broa
 
 ## Decision
 
-Change name to equity-language from gender-equity
+Change name to writeforeveryone from gender-equity
 
 ## Consequences
 

@@ -6,9 +6,9 @@ We want to improve the language used in websites to be more inclusive (of all co
 
 Our goal is to help make content on the web more inclusive towards all genders, LGBTQ+ people, and more. 
 
-[Preview of our web search tool](http://www.nonprofitnetworks.org/equity-language/)
+[Preview of our web search tool](http://www.nonprofitnetworks.org/writeforeveryone/)
 
-Wanna help out? Check out our [Desired Skills](https://github.com/hackforla/equity-language/blob/master/assets/text/desired-skills.md) and contact us on slack. 
+Wanna help out? Check out our [Desired Skills](https://github.com/hackforla/writeforeveryone/blob/master/assets/text/desired-skills.md) and contact us on slack. 
 
 
 Contents:
@@ -60,7 +60,7 @@ Here’s a way to search one site for a bunch of words:
 
 Email Joel Parker Henderson (joel@joelparkerhenderson.com).
 
-If you are a Hack For LA member, then our Slack channel is #equity-language
+If you are a Hack For LA member, then our Slack channel is #writeforeveryone
 
 
 ### Licensing
