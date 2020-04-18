@@ -36,21 +36,14 @@ h2 {
 
 
 .content-wrap {
-  max-width: 650px;
+  max-width: 600px;
   width: 70%;
   margin: 0 auto;
   padding: 60px 0;
 }
 
-/*
-a {
-    color: #017698;
-}
-*/
-
-nav * a {
-    color: #FF5678;
-    font-size: 1.25em;
+textarea {
+  width: 100%;
 }
 
 
@@ -81,4 +74,9 @@ nav ul li {
     display: inline; 
     list-style-type: none;
     padding-right: 1em;
+}
+
+nav * a {
+    color: #FF5678;
+    font-size: 1.25em;
 }
