@@ -3,10 +3,6 @@ function defaultSites() {
     "apnews.com",
     "news.yahoo.com",
     "news.google.com",
-    "cnn.com",
-    "usatoday.com",
-    "foxnews.com",
-    "www.prnewswire.com",
   ].join("\n")
 }
 

@@ -15,17 +15,19 @@ img {
   width: 100px;
 }
 
-h1 {
-    font-family: Varela Round;
+h1, h2 {
+    font-family: Varela Round, sans-serif;
     font-style: normal;
     font-weight: normal;
+}
+
+h1 {
     font-size: 3em;
     line-height: 1.25em;
+    margin-bottom: 0;
 }
+
 h2 {
-    font-family: Varela Round;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5em;
     line-height: 1em;
     margin-top: 2em;
@@ -34,16 +36,16 @@ h2 {
 
 
 .content-wrap {
-  max-width: 650px;
+  max-width: 600px;
   width: 70%;
   margin: 0 auto;
   padding: 60px 0;
 }
 
-a {
-    color: #FF5678;
-    font-size: 1.25em;
+textarea {
+  width: 100%;
 }
+
 
 .btn {
   color: #FFFFFF;
@@ -72,4 +74,9 @@ nav ul li {
     display: inline; 
     list-style-type: none;
     padding-right: 1em;
+}
+
+nav * a {
+    color: #FF5678;
+    font-size: 1.25em;
 }
