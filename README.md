@@ -1,6 +1,6 @@
 <img src="assets/images/hero/hfla-site-hero-600x400.png">
 
-# Write for All
+# Write for All ™
 
 We want to improve the language used in websites to be more inclusive (of all communities) while also educating the public about exclusionary language.
 
