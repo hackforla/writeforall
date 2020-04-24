@@ -1,1 +1,1 @@
-rsync -av --delete /opt/hackforla/writeforeveryone/projects/site-search/ /usr/share/nginx/html/writeforeveryone/
+rsync -av --delete /opt/hackforla/writeforall/projects/site-search/ /usr/share/nginx/html/writeforall/

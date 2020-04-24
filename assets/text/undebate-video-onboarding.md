@@ -7,13 +7,13 @@
 
 ## Project Video Script (WIP - Feel free to modify)
 
-Hi, my name is [NAME], and I'm a [ROLE] on Write for Everyone.
+Hi, my name is [NAME], and I'm a [ROLE] on Write for All.
 
-Write for Everyone is working to create a tool that can search website text, flag instances of non-inclusive language, and provide education in order to create a more inclusive web. 
+Write for All is working to create a tool that can search website text, flag instances of non-inclusive language, and provide education in order to create a more inclusive web. 
 
 Our goal is to help make content on the web more inclusive towards all genders, LGBTQ+ people, and more. 
 
-Think about Write for Everyone as making a Grammarly for inclusive language. 
+Think about Write for All as making a Grammarly for inclusive language. 
 
 Here are 3 examples:
 
@@ -35,5 +35,5 @@ We are currently looking for:
 
 Feel free poke around in our GitHub or slack our channel if you have any questions. Go through our readme for more about the roles we're recruiting for. 
 
-Join Write for Everyone and help move the needle towards a more inclusive web.
+Join Write for All and help move the needle towards a more inclusive web.
 
