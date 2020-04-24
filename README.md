@@ -1,4 +1,4 @@
-<img src="assets/images/hero/hfla-site-hero-600x400.png">
+<img src="assets/images/hero/writeforall.png">
 
 # Write for All ™
 
@@ -6,7 +6,7 @@ We want to improve the language used in websites to be more inclusive (of all co
 
 Our goal is to help make content on the web more inclusive towards all genders, LGBTQ+ people, and more. 
 
-[Preview of our web search tool](http://www.nonprofitnetworks.org/writeforall/)
+[Preview of our web search tool](http://writeforall.org)
 
 Wanna help out? Check out our [Desired Skills](https://github.com/hackforla/writeforall/blob/master/assets/text/desired-skills.md) and contact us on slack. 
 
