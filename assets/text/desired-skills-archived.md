@@ -1,5 +1,6 @@
 # Desired skills
 
+
 Business analyst (BA) skills to research gender inclusive language.
 
   * This project uses a list of gender exclusive words and suggestions for gender inclusive words. 
@@ -85,4 +86,5 @@ Mass communications (MC) skills to write landing page content, contributing page
   * We want these to be great, so we want a mass communication person to write them, to improve what we have.
 
   * Estimate 2-4 weeks.
+
 
