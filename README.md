@@ -8,7 +8,9 @@ Our goal is to help make content on the web more inclusive towards all genders, 
 
 [Preview of our web search tool](http://writeforall.org)
 
-Wanna help out? Check out our [Desired Skills](https://github.com/hackforla/writeforall/blob/master/assets/text/desired-skills.md) and contact us on slack. 
+Wanna help out? 
+
+Check out our [Contributors Wanted](https://github.com/hackforla/writeforall/blob/master/assets/text/contributors-wanted.md) page and contact us on [slack](https://join.slack.com/t/writeforallorg/shared_invite/zt-ee0ay9sw-8hMmh1VHDPY3SSlaNpKUOw). 
 
 
 Contents:
