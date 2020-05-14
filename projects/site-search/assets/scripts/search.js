@@ -1,51 +1,47 @@
-function defaultSites() {
-  return [
-    "apnews.com",
-    "news.yahoo.com",
-    "news.google.com",
-  ].join("\n")
+const DEFAULT_SITES = [
+  "apnews.com",
+];
+
+const DEFAULT_TERMS = [
+  "anchorman",
+  "businessman",
+  "cameraman",
+  "chairman",
+  "clergyman",
+  "councilman",
+  "committeeman",
+  "congressman",
+  "craftsman",
+  "doorman",
+  "everyman",
+  "fireman",
+  "fisherman",
+  "freshman",
+  "gentleman",
+  "layman",
+  "lineman",
+  "mailman",
+  "mankind",
+  "manmade",
+  "manhole",
+  "manpower",
+  "middleman",
+  "newsman",
+  "ombudsman",
+  "policeman",
+  "postman",
+  "spokesman",
+  "statesman",
+];
+
+function getSites() {
+  let e = document.getElementById("sites"); 
+  return (e ? parseSitesAsText(e.value) : DEFAULT_SITES);
 }
 
-function defaultTerms() {
-  return [
-    "anchorman",
-    "businessman",
-    "cameraman",
-    "chairman",
-    "clergyman",
-    "councilman",
-    "committeeman",
-    "congressman",
-    "craftsman",
-    "doorman",
-    "everyman",
-    "fireman",
-    "fisherman",
-    "freshman",
-    "gentleman",
-    "layman",
-    "lineman",
-    "mailman",
-    "mankind",
-    "manmade",
-    "manhole",
-    "manpower",
-    "middleman",
-    "newsman",
-    "ombudsman",
-    "policeman",
-    "postman",
-    "spokesman",
-    "statesman",
-    ].join("\n")
-}
-
-function getSitesAsText() {
-  return document.getElementById("sites").value
-}
-
-function getTermsAsText() {
-  return document.getElementById("terms").value
+function getTerms() {
+  let e = document.getElementById("terms");
+  return (e ? parseTermsAsText(e.value) : DEFAULT_TERMS);
 }
 
 function parseSitesAsText(sitesAsText) {
@@ -73,24 +69,30 @@ function init() {
 }
 
 function initSitesTextArea(params) {
-  document.getElementById("sites").innerHTML = params.get("sites") || defaultSites()
+  let e = document.getElementById("sites");
+  if (e) {
+    e.innerHTML = params.get("sites") || DEFAULT_SITES.join("\n");
+  }
 }
 
 function initTermsTextArea(params) {
-  document.getElementById("terms").innerHTML = params.get("terms") || defaultTerms()
+  let e = document.getElementById("terms");
+  if (e) {
+    e.innerHTML = params.get("terms") || DEFAULT_TERMS.join("\n");
+  }
 }
 
 function initSitesInputFile() {
-  let sitesInputFileElement = document.getElementById('sites-input-file')
-  if (sitesInputFileElement) {
-    sitesInputFileElement.addEventListener('change', function(event){ uploadFileToElementId(event.target, 'sites'); }, false);
+  let e = document.getElementById('sites-input-file')
+  if (e) {
+    e.addEventListener('change', function(event){ uploadFileToElementId(event.target, 'sites'); }, false);
   }
 }
 
 function initTermsInputFile() {
-  let termsInputFileElement = document.getElementById('terms-input-file')
-  if (termsInputFileElement) {
-    termsInputFileElement.addEventListener('change', function(event){ uploadFileToElementId(event.target, 'terms'); }, false);
+  let e = document.getElementById('terms-input-file')
+  if (e) {
+    e.addEventListener('change', function(event){ uploadFileToElementId(event.target, 'terms'); }, false);
   }
 }
 
@@ -107,13 +109,13 @@ function uploadFileToElementId(input, elementId) {
 }
 
 function placeFileContent(target, file) {
-    readFileContent(file).then(content => {
-      target.value = content
+  readFileContent(file).then(content => {
+    target.value = content
   }).catch(error => console.log(error))
 }
 
 function readFileContent(file) {
-    const reader = new FileReader()
+  const reader = new FileReader()
   return new Promise((resolve, reject) => {
     reader.onload = event => resolve(event.target.result)
     reader.onerror = error => reject(error)
@@ -127,8 +129,8 @@ window.addEventListener("load",function() {
   initTermsInputFile()
   document.getElementById('searcher').addEventListener("submit",function(e) {
     e.preventDefault(); // before the code
-    let sites = parseSitesAsText(getSitesAsText())
-    let terms = parseTermsAsText(getTermsAsText())
+    let sites = getSites()
+    let terms = getTerms()
     let query = formatSitesAsSearch(sites) + " " + formatTermsAsSearch(terms)
     window.location = "https://www.google.com/search?q=" + encodeURIComponent(query);
   });
