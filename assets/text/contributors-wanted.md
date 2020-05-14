@@ -17,12 +17,12 @@ The core idea is writing vanilla JavaScript to search text, highlight results, a
 
 ## Business analyst (BA) 
 
-This includes figuring out value stream maps and change management capabilities. 
+This includes figuring out value stream maps and change management capabilities. Joel is the best first contact for this area.
 
 
 ## Subject Mater Experts
 
-We would love help from any subject matter experts: linguists, community organizers, activists advocating for change, etc. who may be able to advise us to make a tool that creates the most positive impact. Charlotte would be the best first contact.
+We would love help from any subject matter experts: linguists, community organizers, activists advocating for change, etc. who may be able to advise us to make a tool that creates the most positive impact on language use on the web. Charlotte would be the best first contact.
 
 
 ## Anything Else!
