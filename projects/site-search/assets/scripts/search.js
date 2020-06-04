@@ -75,7 +75,7 @@ function initSitesInputText(params) {
       case "textarea":
         e.innerHTML = params.get("sites") || DEFAULT_SITES.join("\n");
         break;
-      case "input":
+      case "text":
         e.value = params.get("sites")[0] || DEFAULT_SITES[0]; 
         break;
       default:
@@ -91,7 +91,7 @@ function initTermsInputText(params) {
       case "textarea":
         e.innerHTML = params.get("terms") || DEFAULT_TERMS.join("\n");
         break;
-      case "input":
+      case "text":
         e.value = params.get("terms")[0] || DEFAULT_TERMS[0];
         break;
       default:
