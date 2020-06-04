@@ -62,23 +62,41 @@ function formatTermsAsSearch(terms) {
 
 function init() {
   let params = new URLSearchParams(window.location.search)
-  initSitesTextArea(params)
-  initTermsTextArea(params)
+  initSitesInputText(params)
+  initTermsInputText(params)
   initSitesInputFile()
   initTermsInputFile()
 }
 
-function initSitesTextArea(params) {
+function initSitesInputText(params) {
   let e = document.getElementById("sites");
   if (e) {
-    e.innerHTML = params.get("sites") || DEFAULT_SITES.join("\n");
+    switch(e.type) {
+      case "textarea":
+        e.innerHTML = params.get("sites") || DEFAULT_SITES.join("\n");
+        break;
+      case "input":
+        e.value = params.get("sites")[0] || DEFAULT_SITES[0]; 
+        break;
+      default:
+        //noop
+    }
   }
 }
 
-function initTermsTextArea(params) {
+function initTermsInputText(params) {
   let e = document.getElementById("terms");
   if (e) {
-    e.innerHTML = params.get("terms") || DEFAULT_TERMS.join("\n");
+    switch(e.type) {
+      case "textarea":
+        e.innerHTML = params.get("terms") || DEFAULT_TERMS.join("\n");
+        break;
+      case "input":
+        e.value = params.get("terms")[0] || DEFAULT_TERMS[0];
+        break;
+      default:
+        //noop
+    }
   }
 }
 
