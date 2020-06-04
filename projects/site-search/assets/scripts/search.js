@@ -76,7 +76,7 @@ function initSitesInputText(params) {
         e.innerHTML = params.get("sites") || DEFAULT_SITES.join("\n");
         break;
       case "text":
-        e.value = params.get("sites")[0] || DEFAULT_SITES[0]; 
+        e.value = params.get("sites") || DEFAULT_SITES[0]; 
         break;
       default:
         console.log("initSitesInputText type:" + e.type + " not found")
@@ -92,7 +92,7 @@ function initTermsInputText(params) {
         e.innerHTML = params.get("terms") || DEFAULT_TERMS.join("\n");
         break;
       case "text":
-        e.value = params.get("terms")[0] || DEFAULT_TERMS[0];
+        e.value = params.get("terms") || DEFAULT_TERMS)[0];
         break;
       default:
         console.log("initTermsInputText type:" + e.type + " not found")
