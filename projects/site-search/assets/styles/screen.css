@@ -34,12 +34,11 @@ h2 {
     margin-bottom: 0;
 }
 
-
 .content-wrap {
   max-width: 600px;
   width: 70%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 10px 0;
 }
 
 textarea {
