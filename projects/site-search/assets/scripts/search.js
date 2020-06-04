@@ -79,7 +79,7 @@ function initSitesInputText(params) {
         e.value = params.get("sites")[0] || DEFAULT_SITES[0]; 
         break;
       default:
-        //noop
+        console.log("initSitesInputText type:" + e.type + " not found")
     }
   }
 }
@@ -95,7 +95,7 @@ function initTermsInputText(params) {
         e.value = params.get("terms")[0] || DEFAULT_TERMS[0];
         break;
       default:
-        //noop
+        console.log("initTermsInputText type:" + e.type + " not found")
     }
   }
 }
