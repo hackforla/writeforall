@@ -92,7 +92,7 @@ function initTermsInputText(params) {
         e.innerHTML = params.get("terms") || DEFAULT_TERMS.join("\n");
         break;
       case "text":
-        e.value = params.get("terms") || DEFAULT_TERMS)[0];
+        e.value = params.get("terms") || DEFAULT_TERMS[0];
         break;
       default:
         console.log("initTermsInputText type:" + e.type + " not found")
