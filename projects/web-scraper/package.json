@@ -1,24 +1,60 @@
 {
-  "name": "web-scraper",
-  "version": "0.0.1",
-  "main": "index.js",
+  "name": "Web-Scraper",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "description": "A headless webscraper",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js",
+    "docker": "nodemon -L app.js",
+    "prod": "node app.js",
+    "dev": "nodemon app.js",
+    "watch": "nodemon --exec 'npm run lint && npm start'",
+    "test": "nodemon test.js",
+    "test-integration": "node test-integration.js",
+    "test-unit": "node test-unit.js",
+    "lint": "eslint ./",
+    "coverage": "npm run lint && nyc npm run integration"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/hackforla/gender-equity.git"
   },
-  "author": "",
+  "keywords": [
+    "node",
+    "api",
+    "express",
+    "boilerplate"
+  ],
+  "author": "hackforla",
   "license": "GPL-2.0",
-  "description": "A headless webscraper",
   "dependencies": {
+    "async": "^2.5.0",
+    "bcryptjs": "^2.4.3",
+    "bcryptjs-then": "^1.0.1",
+    "body-parser": "^1.18.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.4",
     "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.4",
     "path": "^0.12.7",
     "puppeteer": "^2.1.1",
     "url": "^0.11.0",
+    "winston": "^3.0.0-rc1",
     "xml2js": "^0.4.23"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.2.0",
+    "eslint": "^4.9.0",
+    "eslint-plugin-node": "^5.2.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.7"
+  }
 }
